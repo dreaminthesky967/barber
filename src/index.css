@@ -1,8 +1,6 @@
-/* 1. IMPORT WAJIB DI PALING ATAS */
 @import "tailwindcss";
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap");
 
-/* 2. PENDAFTARAN TEMA TAILWIND V4 */
 @theme {
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
@@ -50,9 +48,7 @@
   --font-body: "Inter", system-ui, sans-serif;
 }
 
-/* 3. PENGATURAN WARNA DASAR (BASE) */
 @layer base {
-  /* TEMA DEFAULT (Northside Barber Dark Theme) */
   :root {
     --radius: 0.5rem;
     --background: oklch(0.14 0.012 60);
@@ -80,7 +76,7 @@
     --shadow-gold: 0 20px 60px -20px oklch(0.78 0.14 75 / 35%);
     --shadow-deep: 0 30px 80px -30px oklch(0 0 0 / 70%);
 
-    /* Shadcn Sidebar & Charts (Default fallback) */
+    /* Shadcn Sidebar & Charts */
     --chart-1: oklch(0.646 0.222 41.116);
     --chart-2: oklch(0.6 0.118 184.704);
     --chart-3: oklch(0.398 0.07 227.392);
@@ -96,7 +92,7 @@
     --sidebar-ring: oklch(0.78 0.14 75);
   }
 
-  /* SHADCN LIGHT THEME (Opsional jika ingin fitur toggle Light Mode) */
+  /* SHADCN LIGHT THEME  */
   .light {
     --radius: 0.625rem;
     --background: oklch(1 0 0);
@@ -143,7 +139,6 @@
     --ring: oklch(0.551 0.027 264.364);
   }
 
-  /* ATURAN BAWAAN HTML */
   * {
     border-color: var(--color-border);
   }
@@ -167,7 +162,6 @@
   }
 }
 
-/* 4. KELAS UTILITAS KUSTOM */
 @layer utilities {
   .text-gold {
     background: var(--gradient-gold);
